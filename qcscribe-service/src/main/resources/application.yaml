@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: qcscribe-service
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: qwen3:1.7b # You can use models like gemma3:1b
+      embedding:
+        options:
+          model: nomic-embed-text
+    vectorstore:
+      qdrant:
+        host: <qdrant host>
+        port: <qdrant grpc port>
+        collection-name: <collection name>
+        api-key: <qdrant api key>
+        use-tls: true
+qcscribe:
+  search:
+    topK: 10
+    threshold: 0.0
