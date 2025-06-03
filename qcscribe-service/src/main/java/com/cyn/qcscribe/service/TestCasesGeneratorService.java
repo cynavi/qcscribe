@@ -14,7 +14,8 @@ import java.util.stream.Collectors;
 public class TestCasesGeneratorService {
 
     private static final String PROMPT_TEMPLATE = """
-            You are an experienced QA engineer.
+            You are a senior QA engineer. Take a deep breath and think step-by-step before answering.
+            
             Feature: {title}
             Acceptance Criteria: {criteria}
             

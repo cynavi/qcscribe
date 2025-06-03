@@ -3,7 +3,10 @@ spring:
     name: qcscribe-service
   ai:
     openai:
-      api-key: <openai api key>
+      api-key: <api key>
+      chat:
+        options:
+          model: gpt-4
     vectorstore:
       qdrant:
         host: <qdrant host>
@@ -14,4 +17,4 @@ spring:
 qcscribe:
   search:
     topK: 10
-    threshold: 0
+    threshold: 0.0
