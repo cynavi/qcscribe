@@ -22,7 +22,7 @@ public class KnowledgeService {
     private int topK;
 
     @Value("${qcscribe.search.threshold}")
-    private int threshold;
+    private double threshold;
 
     public KnowledgeService(VectorStore vectorStore) {
         this.vectorStore = vectorStore;
